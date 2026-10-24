@@ -1,16 +1,24 @@
-# The URL the site will be built for
 base_url = "https://tickbuddy.app"
+title = "Tickbuddy"
+author = "Martin Hammer"
 
-# Whether to automatically compile all Sass files in the sass directory
-compile_sass = true
-
-# Whether to build a search index to be used later on by a JavaScript library
+compile_sass = false
 build_search_index = false
+generate_feeds = false
 
 [markdown]
-
-[markdown.highlighting]
-theme = "catppuccin-mocha"
+smart_punctuation = true
 
 [extra]
-# Put all your custom variables here
+menu = [
+  { name = "Home",     url = "/" },
+  { name = "Features", url = "/features/" },
+  { name = "History",  url = "/history/" },
+  { name = "Contact",  url = "/contact/" },
+]
+
+links = [
+  { name = "Source code on GitHub", icon = "github",    url = "https://github.com/martinhammer/tickbuddy" },
+  { name = "Nextcloud app store",   icon = "nextcloud", url = "https://apps.nextcloud.com/apps/tickbuddy" },
+  { name = "Get it on F-Droid",     icon = "fdroid",    url = "https://f-droid.org/packages/com.martinhammer.tickdroid" },
+]

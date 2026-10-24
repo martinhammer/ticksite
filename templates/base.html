@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {# The browser-tab title: "Page title · Site title", or just the site title on the home page. #}
+  <title>{% block title %}{{ config.title }}{% endblock %}</title>
+  <meta name="description" content="{{ config.description }}">
+  <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+</head>
+<body>
+
+  <header>
+    <div class="brand">
+      <a class="site-name" href="{{ get_url(path='/') }}">{{ config.title }}</a>
+      {%- for link in config.extra.links %}
+      <a class="icon-link" href="{{ link.url }}" title="{{ link.name }}" aria-label="{{ link.name }}">
+       <span aria-hidden="true">{{ load_data(path="static/icons/" ~ link.icon ~ ".svg", format="plain") | safe }}</span>
+      </a>
+      {%- endfor %}
+    </div>
+    <nav>
+      {# Loop over the menu defined in config.toml #}
+      {%- for item in config.extra.menu %}
+      <a href="{{ get_url(path=item.url, trailing_slash=true) }}"{% if current_path is defined and current_path == item.url %} aria-current="page"{% endif %}>{{ item.name }}</a>
+      {%- endfor %}
+    </nav>
+  </header>
+
+  <main>
+    {# Each page template fills in this block #}
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer>
+    © {{ now() | date(format="%Y") }} {{ config.author }}
+  </footer>
+
+  {# Click an image in the page to see it larger. Click again or press Esc to close. #}
+  <dialog id="lightbox"><img alt=""></dialog>
+  <script>
+    const box = document.getElementById("lightbox");
+    const big = box.querySelector("img");
+    document.querySelectorAll("main img").forEach(img => {
+      img.addEventListener("click", () => {
+        big.src = img.currentSrc || img.src;
+        big.alt = img.alt;
+        box.showModal();
+      });
+    });
+    box.addEventListener("click", () => box.close());
+  </script>
+
+</body>
+</html>
