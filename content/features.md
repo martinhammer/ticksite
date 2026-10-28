@@ -46,9 +46,9 @@ Key features available now:
 ## Roadmap
 
 These are some of the major planned features. Feel free to [get in touch](@/contact.md) if you have another request.
-* UI updates for web and Android
+* UI updates for web and Android (coming soon!)
+* Attaching short notes to ticks in Tickbuddy and Tickdroid (coming soon!)
 * Ping URLs for further automation integrations, e.g. home automation and TickRED for Node-RED
-* Attaching short notes to ticks in Tickbuddy and Tickdroid
 * Additional track types (numbers and custom lists)
 * Setting and tracking of targets, goals and expectations
 * Defining groups of tracks
