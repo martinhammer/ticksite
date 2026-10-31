@@ -52,6 +52,7 @@ These are some of the major planned features. Feel free to [get in touch](@/cont
 * Additional track types (numbers and custom lists)
 * Setting and tracking of targets, goals and expectations
 * Defining groups of tracks
+* Shared tracks with other users on the same Nextcloud instance
 * Improved analytics
 * Migration options from other tools
 * Support for translations and improved accessibility
