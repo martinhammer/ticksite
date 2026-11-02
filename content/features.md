@@ -7,7 +7,7 @@ The key Tickbuddy concept is the **track**. Tracks represent the habit, event, o
 
 Each track has a **type**, and as of today there are two types: Yes/No and Counter. More track types are planned.
 
-Some clients (specifically Tickcli and TickLLMe; web and Android will follow) already support attaching a short **note** to each tick (e.g. _Run cut short: injury flared up_, _Backup completed successfully at 23:51_).
+Optionally, it is possible to attach a short **note** to each tick (e.g. _Run cut short: injury flared up_, _Backup completed successfully at 23:51_).
 
 Tracks can optionally be marked as **private**, which means that clients should not show them by default unless requested.
 
@@ -24,19 +24,19 @@ Key features available now:
 	* everything is exposed through APIs which all of the clients leverage
 * Tickbuddy (web UI)
 	* track management
-	* Edit Journal and View Journal screens
+	* Today and Journal screens to view and edit your daily log
 	* per track Analytics screen
 	* dashboard widget
 	* export and import functionality
 * Tickdroid
 	* connect to Tickbuddy with an app password
-	* journal screen to view and tick
+	* Today and Journal screens to view and edit your daily log
 	* full track management including add, rename, reorder, toggle private, archive/restore, delete
 	* interactive home screen widgets
 	* app settings including light and dark mode, journal grid density, etc.
 * Tickcli ("tickly")
 	* connect to Tickbuddy with Login Flow v2 or an app password
-	* comprehensive set of read and write commands (including notes, not yet available on the web or Android)
+	* comprehensive set of read and write commands
 	* pretty-print output to terminal, plain output when piped, optional JSON output
 * TickLLMe ("tickle me")
 	* a ready-made extension (.mcpb) for Claude Desktop, and a plugin for Claude Code
@@ -46,8 +46,6 @@ Key features available now:
 ## Roadmap
 
 These are some of the major planned features. Feel free to [get in touch](@/contact.md) if you have another request.
-* UI updates for web and Android (coming soon!)
-* Attaching short notes to ticks in Tickbuddy and Tickdroid (coming soon!)
 * Ping URLs for further automation integrations, e.g. home automation and TickRED for Node-RED
 * Additional track types (numbers and custom lists)
 * Setting and tracking of targets, goals and expectations
