@@ -18,7 +18,7 @@ menu = [
 ]
 
 links = [
-  { name = "Source code on GitHub", icon = "github",    url = "https://github.com/martinhammer/tickbuddy" },
   { name = "Nextcloud app store",   icon = "nextcloud", url = "https://apps.nextcloud.com/apps/tickbuddy" },
   { name = "Get it on F-Droid",     icon = "fdroid",    url = "https://f-droid.org/packages/com.martinhammer.tickdroid" },
+  { name = "Source code on GitHub", icon = "github",    url = "https://github.com/martinhammer/tickbuddy" },
 ]
