@@ -6,7 +6,7 @@ title = "Home"
 
 Tickbuddy is a daily habit and event tracker for Nextcloud.
 
-Tickbuddy lets you keep track of what happens each day, such as your meditation, exercise, or how many cups of coffee you had. Your scripts and AI agents can also log automatically, for example to record nightly backups. Tickbuddy is flexible: use it for habits, chores, keeping an eye on automations, or anything else that matters to you. Over time, analyse patterns and statistics with the built-in analytics.
+Tickbuddy lets you keep track of what happens each day, such as your exercise or how many cups of coffee you had. Your scripts and AI agents can also log automatically, for example to record nightly backups. Tickbuddy is flexible: use it for habits, chores, keeping an eye on automations, or anything else that matters to you. Over time, analyse patterns and statistics with the built-in analytics.
 
 Tickbuddy is **fully open source**, **respects your privacy**, **doesn't lock in your data** and can easily be **self-hosted**. It is simple to use, yet powerful and flexible. Tickbuddy and its companion apps support logging and tracking via web, mobile, command line, MCP and APIs.
 
