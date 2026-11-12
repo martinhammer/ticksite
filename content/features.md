@@ -15,7 +15,7 @@ Tracks can be **archived**, which means that they become read-only and clients d
 
 ## Existing functionality
 
-Key features available now:
+Key features that are available now:
 
 ### Tickbuddy (backend)
 * stores tracks, ticks, notes
@@ -49,19 +49,25 @@ Key features available now:
 * three permission levels (read only; also record ticks; also add and rename tracks)
 
 ## Roadmap
-
-These are some of the major planned features. Feel free to [get in touch](@/contact.md) if you have another request or suggestion.
+These are some of the planned features (not in the order of priority):
 
 * Ping URLs for further automation integrations, e.g. home automation
 * Additional track types (numbers and custom lists)
 * Setting and tracking of targets, goals and expectations
 * Defining groups of tracks
-* Shared tracks with other users on the same Nextcloud instance
-* Immutable / read-only tracks, i.e. value cannot be changed once set or beyond the end of the day
 * Stats and analytics in Tickdroid
 * Improved analytics in Tickbuddy
 * Remote MCP server
 * TickRED: Tickbuddy node for Node-RED
 * Migration options from other tools
 * Support for translations and improved accessibility
-* Maybe even a smartwatch app
+
+Some early stage ideas, which are not yet committed as part of the roadmap:
+
+* Shared tracks with other users on the same Nextcloud instance
+* Immutable / read-only tracks, i.e. value cannot be changed once set or beyond the end of the day
+* Calculated / derived tracks, i.e. value is calculated from other tracks and not entered directly
+* Composite tracks, i.e. tracks that have more than one value
+* Garmin smartwatch app
+
+Feel free to [get in touch](@/contact.md) if you have another request, suggestion or idea.
