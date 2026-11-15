@@ -9,7 +9,7 @@ The original inspiration for Tickbuddy and Tickdroid was the "one-bit journal" A
 After I migrated my personal productivity management to Nextcloud, I started looking around for an app like Tickmate but with Nextcloud sync. There wasn't one. Although I started thinking about building one myself, I never found the right time to take on the challenge. So the idea was on ice for a couple of years.
 
 ### April 2026
-This changed with the advent of AI coding tools. I wanted to experiment with Claude Code, and Tickbuddy was the perfect project to take on. Without going through the whole debate on AI slop (the code is open source, and anyone is free to judge its quality and the merits of the apps), as a a technical person and an IT professional I cannot imagine **not** using these tools for development in 2026.
+This changed with the advent of AI coding tools. I wanted to experiment with Claude Code, and Tickbuddy was the perfect project to take on. Without going through the whole debate on AI slop (the code is open source, and anyone is free to judge its quality and the merits of the apps), as a technical person and an IT professional I cannot imagine **not** using these tools for development in 2026.
 
 ### May - August 2026
 Tickbuddy was born as a "habit tracker for Nextcloud" and was first released on the [Nextcloud app store](https://apps.nextcloud.com/apps/tickbuddy) in May 2026. Tickdroid, the Android companion app, was developed alongside Tickbuddy, but it took until August 2026 for it to appear on [F-Droid](https://f-droid.org/packages/com.martinhammer.tickdroid).
