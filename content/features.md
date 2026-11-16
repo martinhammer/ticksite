@@ -51,7 +51,7 @@ Key features that are available now:
 ## Roadmap
 These are some of the planned features (not in the order of priority):
 
-* Ping URLs for further automation integrations, e.g. home automation
+* Public links / ping URLs for further automation integrations, e.g. home automation
 * Additional track types (numbers and custom lists)
 * Setting and tracking of targets, goals and expectations
 * Defining groups of tracks
