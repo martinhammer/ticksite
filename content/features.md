@@ -23,6 +23,7 @@ Key features that are available now:
 * tracks can be marked as private
 * tracks can be archived and restored, renamed, deleted, reordered
 * everything is exposed through APIs which all of the clients leverage
+* Public links / ping URLs for script and automation integrations without an app password
 
 ### Tickbuddy (web UI)
 * track management
@@ -51,7 +52,6 @@ Key features that are available now:
 ## Roadmap
 These are some of the planned features (not in the order of priority):
 
-* Public links / ping URLs for further automation integrations, e.g. home automation
 * Additional track types (numbers and custom lists)
 * Setting and tracking of targets, goals and expectations
 * Defining groups of tracks
@@ -66,7 +66,8 @@ Some early stage ideas, which are not yet committed as part of the roadmap:
 
 * Shared tracks with other users on the same Nextcloud instance
 * Immutable / read-only tracks, i.e. value cannot be changed once set or beyond the end of the day
-* Calculated / derived tracks, i.e. value is calculated from other tracks and not entered directly
+* Further track types such as duration and time of day
+* Calculated / derived tracks, i.e. value is calculated from other tracks
 * Composite tracks, i.e. tracks that have more than one value
 * Garmin smartwatch app
 

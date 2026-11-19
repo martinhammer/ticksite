@@ -14,12 +14,14 @@ This changed with the advent of AI coding tools. I wanted to experiment with Cla
 ### May - August 2026
 Tickbuddy was born as a "habit tracker for Nextcloud" and was first released on the [Nextcloud app store](https://apps.nextcloud.com/apps/tickbuddy) in May 2026. Tickdroid, the Android companion app, was developed alongside Tickbuddy, but it took until August 2026 for it to appear on [F-Droid](https://f-droid.org/packages/com.martinhammer.tickdroid).
 
-### September - October 2026
+### September - November 2026
 Heavy development with multiple releases of Tickbuddy and Tickdroid. Features such as Android home screen widgets, notes, and the alternative layout option on journal screen were added based on user requests. October ended with the most significant UI update in both Tickbuddy and Tickdroid, namely the introduction of Today screen as the default landing place. 
 
 October saw the initial releases of Tickcli and TickLLMe, new additions in the family. This website also went live.
 
+The latest release of Tickbuddy in November added public links (also known as ping URLs), which allow automations and scripts tick or read a single track, without exposing your whole Nextcloud account through an app password.
+
 ### Going forward
-Habit tracking remains the main use case, but Tickbuddy has started to evolve towards a more flexible "daily everything-tracker" concept that goes beyond its original scope. In particular, Tickcli and TickLLMe are the building blocks for integration with automations and AI agents. There is further work planned in this direction.
+Habit tracking remains the main use case, but Tickbuddy has started to evolve towards a more flexible "daily everything-tracker" concept that goes beyond its original scope. In particular, Tickcli, TickLLMe and public links are the building blocks for integration with automations and AI agents.
 
 I have been putting some effort to prepare and maintain a coherent and prioritised product roadmap. Check out the [summarised version](@/features.md#roadmap) for upcoming features that are planned.
