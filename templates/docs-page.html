@@ -1,0 +1,9 @@
+{# One documentation sub-page, e.g. content/docs/api.md #}
+{% extends "docs-base.html" %}
+
+{% block title %}{{ page.title }} · {{ config.title }}{% endblock %}
+
+{% block doc %}
+  <h1>{{ page.title }}</h1>
+  {{ page.content | safe }}
+{% endblock %}

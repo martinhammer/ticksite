@@ -62,6 +62,44 @@ a { color: var(--accent); }
 h1, h2, h3 { line-height: 1.25; }
 img { max-width: 100%; height: auto; }
 code { font-size: 0.9em; }
+/* A long code line scrolls sideways inside its block instead of making
+   the whole page wider than a phone screen. */
+pre { overflow-x: auto; }
+
+/* Tables: a light grid, a tinted header row, and faint stripes on every
+   other row so long tables are easy to follow across. The tints are mixed
+   from the text colour, so they work in light and dark mode alike. */
+table {
+  width: 100%;
+  margin: 1.5rem 0;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+th, td {
+  padding: 0.45rem 0.75rem;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+th {
+  font-weight: 600;
+  background: color-mix(in srgb, var(--text) 7%, transparent);
+}
+tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--text) 3%, transparent);
+}
+/* Keep names in the first column (headers, flags, fields) on one line,
+   rather than breaking them at a hyphen. */
+td:first-child code { white-space: nowrap; }
+/* On a phone a wide table scrolls sideways on its own instead of
+   pushing the whole page wider than the screen. The last column (usually
+   the explanation) keeps a readable width rather than being squeezed. */
+@media (max-width: 40rem) {
+  table { display: block; overflow-x: auto; }
+  th, td { padding: 0.4rem 0.55rem; }
+  td:last-child { min-width: 14rem; }
+}
 
 footer {
   padding: 1.5rem 0;
@@ -74,6 +112,52 @@ footer {
   margin-top: 2.25em;
 }
 h2, h3 { margin-bottom: 0.5em; }
+
+/* Documentation section: a menu of the sub-pages. On wide screens it sits
+   in the empty space left of the text column, so the text stays where it is
+   on every other page; on narrow screens it becomes a row of links above. */
+.docs-nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1rem; }
+.docs-side {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.95rem;
+}
+.docs-nav a { color: var(--muted); text-decoration: none; }
+.docs-nav a:hover, .docs-nav a[aria-current="page"] { color: var(--accent); }
+.docs-toc { display: none; }
+
+@media (min-width: 72rem) {
+  .docs { position: relative; }
+  .docs-side {
+    position: absolute;
+    top: 0; bottom: 0;
+    right: calc(100% + 2.5rem);
+    width: 12rem;
+    margin: 0; padding: 0; border: 0;
+  }
+  .docs-nav {
+    position: sticky;
+    top: 1.5rem;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 0.35rem;
+    padding-top: 0.5rem;
+    border-right: 1px solid var(--line);
+    padding-right: 1.25rem;
+  }
+  .docs-toc {
+    display: block;
+    list-style: none;
+    margin: 0 0 0.35rem;
+    padding-left: 0.75rem;
+    font-size: 0.875rem;
+  }
+  .docs-toc li { margin: 0.2rem 0; }
+}
+
+.docs-list dt { margin-top: 1rem; font-weight: 600; }
+.docs-list dd { margin: 0.15rem 0 0; color: var(--muted); }
 
 /* Image enlarge-on-click */
 main img { cursor: zoom-in; }

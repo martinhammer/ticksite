@@ -20,9 +20,11 @@
       {%- endfor %}
     </div>
     <nav>
-      {# Loop over the menu defined in config.toml #}
+      {# Loop over the menu defined in zola.toml. A menu item stays highlighted
+         on the pages below it too, e.g. "Documentation" on /documentation/api/. #}
+      {%- set here = current_path if current_path is defined else "" %}
       {%- for item in config.extra.menu %}
-      <a href="{{ get_url(path=item.url, trailing_slash=true) }}"{% if current_path is defined and current_path == item.url %} aria-current="page"{% endif %}>{{ item.name }}</a>
+      <a href="{{ get_url(path=item.url, trailing_slash=true) }}"{% if here == item.url or (item.url != "/" and here is starting_with(pat=item.url)) %} aria-current="page"{% endif %}>{{ item.name }}</a>
       {%- endfor %}
     </nav>
   </header>

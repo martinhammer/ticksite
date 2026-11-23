@@ -19,7 +19,7 @@ Heavy development with multiple releases of Tickbuddy and Tickdroid. Features su
 
 October saw the initial releases of Tickcli and TickLLMe, new additions in the family. This website also went live.
 
-The latest release of Tickbuddy in November added public links (also known as ping URLs), which allow automations and scripts tick or read a single track, without exposing your whole Nextcloud account through an app password.
+In November, Tickbuddy added public links (also known as ping URLs), which allow automations and scripts tick or read a single track, without exposing your whole Nextcloud account through an app password. The most recent coordinated release (Tickbuddy, Tickdroid, Tickcli and TickLLMe) saw the introduction of new track types for the first time. The new types are Number (a numeric entry, with optional decimal places, unit, and negative value) and Choice (a selection from a user-defined list of values).
 
 ### Going forward
 Habit tracking remains the main use case, but Tickbuddy has started to evolve towards a more flexible "daily everything-tracker" concept that goes beyond its original scope. In particular, Tickcli, TickLLMe and public links are the building blocks for integration with automations and AI agents.

@@ -1,0 +1,30 @@
+{# The shared layout of all Docs pages: a menu of the sub-pages next
+   to (or, on narrow screens, above) the page content. Not used directly;
+   docs-section.html and docs-page.html build on it. #}
+{% extends "base.html" %}
+
+{% block content %}
+  {% set docs = get_section(path="docs/_index.md") %}
+  {% set here = current_path if current_path is defined else "" %}
+  <div class="docs">
+    <aside class="docs-side">
+      <nav class="docs-nav" aria-label="Documentation">
+        <a href="{{ docs.permalink }}"{% if here == docs.path %} aria-current="page"{% endif %}>Overview</a>
+        {% for p in docs.pages %}
+        <a href="{{ p.permalink }}"{% if here == p.path %} aria-current="page"{% endif %}>{{ p.title }}</a>
+          {# Under the current page: links to its own ## headings #}
+          {% if here == p.path and p.toc %}
+          <ul class="docs-toc">
+            {% for h in p.toc %}
+            <li><a href="{{ h.permalink }}">{{ h.title }}</a></li>
+            {% endfor %}
+          </ul>
+          {% endif %}
+        {% endfor %}
+      </nav>
+    </aside>
+    <div class="docs-content">
+      {% block doc %}{% endblock %}
+    </div>
+  </div>
+{% endblock %}
